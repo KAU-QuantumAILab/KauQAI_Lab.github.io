@@ -56,7 +56,7 @@ member_groups:
         image: none.png
       - name: JeongHun Kim
         korean_name: 김정훈
-        image: none.png
+        image: jeonghun.png
       - name: SungJun Kang
         korean_name: 강성준
         image: none.png
