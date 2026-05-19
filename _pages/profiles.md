@@ -50,6 +50,7 @@ member_groups:
       - name: Daeyun Go
         korean_name: 고대윤
         image: none.png
+        interests: Adversarial attack
       - name: Hyunbin Park
         korean_name: 박현빈
         image: none.png
@@ -59,6 +60,7 @@ member_groups:
       - name: Eunsu Noh
         korean_name: 노은수
         image: eunsu.jpg
+        interests: Quantum AI
       - name: Jihong Kim
         korean_name: 김지홍
         image: none.png
@@ -71,17 +73,21 @@ member_groups:
       - name: KeonSoo Lee
         korean_name: 이건수
         image: keonsoo.jpg
+        interests: LLM
   - title: Alumni
     members:
       - name: SeungHyun Ham
         korean_name: 함승현
         image: seunghyun.jpg
+        interests: GNN, Data embedding
       - name: MinSung Jo
         korean_name: 조민성
         image: minsung.png
+        interests: AI modeling
       - name: JaeHyeon Kim
         korean_name: 김재현
         image: jaehyeon.jpg
+        interests: Quantum AI
   - title: Run
     members:
       - name: Garam Jeong
