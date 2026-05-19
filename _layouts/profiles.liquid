@@ -29,7 +29,7 @@ layout: page
         {% for member in group.members %}
           <div class="person-card">
             {% if member.image %}
-              {% assign member_image_path = member.image | prepend: 'assets/img/people/' %}
+              {% assign member_image_path = member.image | prepend: 'assets/img/' %}
               {% include figure.liquid loading="lazy" path=member_image_path class="person-photo" sizes="260px" alt=member.name %}
             {% else %}
               <div class="person-photo person-photo-placeholder"></div>

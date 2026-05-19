@@ -7,7 +7,7 @@ nav: true
 nav_order: 7
 
 professor:
-  name: JaeHoon Jung
+  name: Jay Hoon Jung
   image: prof_pic.jpg
   content: about_professor.md
 
@@ -18,18 +18,24 @@ member_groups:
         korean_name: 송동수
       - name: Muhammad Arslan
         korean_name: 무하마드 아르슬란
+        image: arslan.jpg
   - title: Master Students
     members:
       - name: ChanJu Kim
         korean_name: 김찬주
+        image: chanju.jpg
       - name: OhSeong Kwon
         korean_name: 권오성
+        image: ohseong.jpg
       - name: Jihun Jeon
         korean_name: 전지훈
+        image: jihun.jpg
       - name: Daehwa Ko
         korean_name: 고대화
+        image: radical.jpg
       - name: Boseung Seo
         korean_name: 서보승
+        image: boseung.jpg
       - name: SeungHyun Ko
         korean_name: 고승현
       - name: Daeyun Go
@@ -40,6 +46,7 @@ member_groups:
     members:
       - name: Eunsu Noh
         korean_name: 노은수
+        image: eunsu.jpg
       - name: Jihong Kim
         korean_name: 김지홍
       - name: JeongHun Kim
@@ -54,6 +61,8 @@ member_groups:
         korean_name: 함승현
       - name: MinSung Jo
         korean_name: 조민성
+        image: minsung.png
       - name: JaeHyeon Kim
         korean_name: 김재현
+        image: jaehyeon.jpg
 ---
