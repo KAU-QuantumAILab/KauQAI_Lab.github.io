@@ -6,23 +6,54 @@ description: members of the lab or group
 nav: true
 nav_order: 7
 
-profiles:
-  # if you want to include more than one profile, just replicate the following block
-  # and create one content file for each profile inside _pages/
-  - align: right
-    image: prof_pic.jpg
-    content: about_professor.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
-  - align: left
-    image: prof_pic.jpg
-    content: about_professor.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+professor:
+  name: JaeHoon Jung
+  image: prof_pic.jpg
+  content: about_professor.md
+
+member_groups:
+  - title: Ph.D Students
+    members:
+      - name: DongSu Song
+        korean_name: 송동수
+      - name: Muhammad Arslan
+        korean_name: 무하마드 아르슬란
+  - title: Master Students
+    members:
+      - name: ChanJu Kim
+        korean_name: 김찬주
+      - name: OhSeong Kwon
+        korean_name: 권오성
+      - name: Jihun Jeon
+        korean_name: 전지훈
+      - name: Daehwa Ko
+        korean_name: 고대화
+      - name: Boseung Seo
+        korean_name: 서보승
+      - name: SeungHyun Ko
+        korean_name: 고승현
+      - name: Daeyun Go
+        korean_name: 고대윤
+      - name: Hyunbin Park
+        korean_name: 박현빈
+  - title: Undergraduate Students
+    members:
+      - name: Eunsu Noh
+        korean_name: 노은수
+      - name: Jihong Kim
+        korean_name: 김지홍
+      - name: JeongHun Kim
+        korean_name: 김정훈
+      - name: SungJun Kang
+        korean_name: 강성준
+      - name: KeonSoo Lee
+        korean_name: 이건수
+  - title: Alumni
+    members:
+      - name: SeungHyun Ham
+        korean_name: 함승현
+      - name: MinSung Jo
+        korean_name: 조민성
+      - name: JaeHyeon Kim
+        korean_name: 김재현
 ---

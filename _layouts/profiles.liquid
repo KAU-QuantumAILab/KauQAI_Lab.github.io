@@ -1,36 +1,44 @@
 ---
 layout: page
 ---
-<div class="post">
+<div class="post people">
   <article>
-    {% if page.profiles %}
-      {% for profile in page.profiles %}
-        <hr>
-        <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
-          {% if profile.image %}
-            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-            {% if profile.image_circular %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-            {% else %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-            {% endif %}
-            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
-          {% endif %}
-          {% if profile.more_info %}
-            <div class="more-info">{{ profile.more_info }}</div>
+    {% if page.professor %}
+      <div class="professor-profile">
+        <div class="profile float-right">
+          {% if page.professor.image %}
+            {% assign professor_image_path = page.professor.image | prepend: 'assets/img/' %}
+            {% include figure.liquid loading="eager" path=professor_image_path class="img-fluid z-depth-1 rounded" sizes="300px" alt=page.professor.name %}
           {% endif %}
         </div>
-
         <div class="clearfix">
-          {% if profile.content %}
-            {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-            {{ profile_content | markdownify }}
+          <h2>{{ page.professor.name }}</h2>
+          {% if page.professor.content %}
+            {% capture professor_content %}{% include_relative {{ page.professor.content }} %}{% endcapture %}
+            {{ professor_content | markdownify }}
           {% else %}
             {{ content }}
           {% endif %}
         </div>
-      {% endfor %}
+      </div>
     {% endif %}
+
+    {% for group in page.member_groups %}
+      <h2>{{ group.title }}</h2>
+      <div class="people-grid">
+        {% for member in group.members %}
+          <div class="person-card">
+            {% if member.image %}
+              {% assign member_image_path = member.image | prepend: 'assets/img/people/' %}
+              {% include figure.liquid loading="lazy" path=member_image_path class="person-photo" sizes="260px" alt=member.name %}
+            {% else %}
+              <div class="person-photo person-photo-placeholder"></div>
+            {% endif %}
+            <h3>{{ member.name }} ({{ member.korean_name }})</h3>
+            <p>AI modeling</p>
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
   </article>
 </div>
