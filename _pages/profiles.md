@@ -66,4 +66,7 @@ member_groups:
       - name: JaeHyeon Kim
         korean_name: 김재현
         image: jaehyeon.jpg
+      - name: Garam Jeong
+        korean_name: 정가람
+        image: garam.jpg
 ---
