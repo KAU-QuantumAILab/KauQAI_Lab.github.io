@@ -8,6 +8,10 @@ body {
   padding-bottom: 70px;
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
+  background-image:
+    radial-gradient(circle at top left, rgba(15, 118, 110, 0.08), transparent 32%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.38), rgba(255, 255, 255, 0));
+  min-height: 100vh;
 
   h1,
   h2,
@@ -31,6 +35,23 @@ body.sticky-bottom-footer {
 
 .container {
   max-width: v.$max-content-width;
+}
+
+.container.mt-5 {
+  margin-top: 4.5rem !important;
+  margin-bottom: 3.5rem;
+}
+
+.post {
+  .post-header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  .post-title {
+    margin-bottom: 0;
+  }
 }
 
 // Profile

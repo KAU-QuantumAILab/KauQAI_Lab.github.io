@@ -38,6 +38,10 @@ ul.task-list input[type="checkbox"] {
 
 .card {
   background-color: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 16px;
+  box-shadow: 0 14px 40px var(--global-shadow-color);
+  backdrop-filter: blur(10px);
 
   .card-img {
     width: 100%;
@@ -61,7 +65,9 @@ ul.task-list input[type="checkbox"] {
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: monospace;
+    font-family: "Manrope", sans-serif;
+    font-size: 0.93rem;
+    color: var(--global-text-color-light);
 
     p {
       display: inline-block;
@@ -214,8 +220,19 @@ ul.task-list input[type="checkbox"] {
   }
 
   .card {
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease,
+      border-color 0.2s ease;
+
     img {
       width: 100%;
+    }
+
+    &:hover {
+      transform: translateY(-4px);
+      border-color: rgba(15, 118, 110, 0.25);
+      box-shadow: 0 20px 46px var(--global-shadow-color);
     }
   }
 
@@ -251,6 +268,7 @@ ul.task-list input[type="checkbox"] {
 
 .social {
   text-align: center;
+  margin-top: 3rem;
 
   .contact-icons {
     font-size: 4rem;

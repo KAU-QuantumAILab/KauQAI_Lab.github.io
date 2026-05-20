@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Quantum AI, Explainable AI, Adversarial Attacks, and other AI-Related research areas.
 

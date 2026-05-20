@@ -5,10 +5,12 @@
 @use "variables" as v;
 
 .navbar {
-  box-shadow: none;
-  border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
-  opacity: 0.95;
+  box-shadow: 0 10px 30px var(--global-shadow-color);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: var(--global-nav-bg-color);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  opacity: 1;
 }
 
 .navbar .dropdown-menu,
@@ -57,10 +59,15 @@
 
   .navbar-brand {
     color: var(--global-text-color);
+    font-size: 1.2rem;
+    font-weight: 700;
   }
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 0.96rem;
 
     &:hover {
       color: var(--global-hover-color);
@@ -69,7 +76,7 @@
 
   .navbar-nav .nav-item.active > .nav-link {
     background-color: inherit;
-    font-weight: bolder;
+    font-weight: 800;
     color: var(--global-theme-color);
 
     &:hover {
@@ -183,6 +190,8 @@
   border: 0;
   background-color: inherit;
   color: var(--global-text-color);
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
 
   &:hover {
     color: var(--global-hover-color);
